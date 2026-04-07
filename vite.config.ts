@@ -22,7 +22,9 @@ export default defineConfig({
     })
   ],
 
-  server: {
-    port: 5002
+  build: {
+    target: "esnext",
+    modulePreload: false,
+    cssCodeSplit: false
   }
 });
